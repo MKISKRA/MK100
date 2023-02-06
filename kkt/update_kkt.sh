@@ -35,7 +35,7 @@ if [[ "$IS_OK" == "OK" ]]; then
 fi
 
 echo "write OK"
-sleep 10
+sleep 5
 exit 0
 
 # ./ysend.sh prim05_ST_301_03.bin
