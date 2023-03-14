@@ -23,11 +23,11 @@ fi
 
 if [ ! -s "${FILENAME}" ]; then
     let touch_detected=$touch_detected+1
-#else
-#    let touch_detected=0
-#    echo 70 > /sys/class/backlight/backlight-dsi/brightness
-#    pkill evtest
-#    let SLEEP_TOUCH='0'
+else
+    let touch_detected=0
+    echo 70 > /sys/class/backlight/backlight-dsi/brightness
+    pkill evtest
+    let SLEEP_TOUCH='0'
 fi
 
 
