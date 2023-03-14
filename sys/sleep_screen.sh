@@ -36,7 +36,7 @@ if [ "$how_many_touches" -eq "$touch_detected" ]; then
     
     if [[ "$SLEEP_TOUCH" == *"$SUB"* ]]; then
     	let SLEEP_TOUCH='1'
-    	echo 30 > /sys/class/backlight/backlight-dsi/brightness
+    	echo 1 > /sys/class/backlight/backlight-dsi/brightness
     	evtest --grab /dev/input/event0 > /dev/null 2>&1 &
     fi
 fi
