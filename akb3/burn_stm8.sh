@@ -2,6 +2,7 @@
 
 ### burn stm8 in "accumulatornii modul"
 
+cd /root/mk100/MK100/akb3
 mount -t debugfs debugfs /sys/kernel/debug
 ONOFF=`cat /sys/kernel/debug/gpio | grep ONOFF | awk '{print $1}' | awk -F '-' '{print $2}'`
 MUX_D=$((${ONOFF}+14)) #510
