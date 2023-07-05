@@ -7,6 +7,4 @@ cp /root/mk100/MK100/sys/speedtest.sh /root/mk100/mk100t/speedtest.sh;
 cp /root/mk100/MK100/sys/libinput.rules /lib/udev/rules.d/libinput.rules;
 cp /root/mk100/MK100/sys/gbutton /root/mk100/mk100t/gbutton;
 cp /root/mk100/MK100/sys/sleep_screen.sh /root/mk100/mk100t/sleep_screen.sh;
-cp /root/mk100/MK100/akb/XC8_Charger.hex /root/mk100/firmwares/akb/XC8_Charger.hex;
-cp /root/mk100/MK100/akb/ver.info /root/mk100/firmwares/akb/ver.info
 /root/mk100/mk100t/start.sh
