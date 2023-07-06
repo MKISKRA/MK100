@@ -1,5 +1,6 @@
 #!/bin/bash
 pkill MK100T; cd /root/mk100/MK100/ ; git fetch --all ; git reset --hard ; git pull; cp /root/mk100/MK100/MK100T /root/mk100/mk100t/MK100T; chmod +x /root/mk100/mk100t/MK100T;
+cp /root/mk100/MK100/sys/bank.png /root/mk100/mk100t/bank.png;
 cp /root/mk100/MK100/sys/data_print.cmd /root/mk100/mk100t/data_print.cmd;
 cp /root/mk100/MK100/sys/bl_scan.sh /root/mk100/mk100t/bl_scan.sh;
 cp /root/mk100/MK100/sys/ping.sh /root/mk100/mk100t/ping.sh;
