@@ -12,5 +12,6 @@ cp /root/mk100/MK100/sys/init_modem_tele2.sh /root/mk100/mk100t/init_modem_tele2
 cp /root/mk100/MK100/sys/libinput.rules /lib/udev/rules.d/libinput.rules;
 cp /root/mk100/MK100/sys/gbutton /root/mk100/mk100t/gbutton;
 cp /root/mk100/MK100/sys/sleep_screen.sh /root/mk100/mk100t/sleep_screen.sh;
+cp /root/mk100/MK100/sys/mp2696_charger.ko /root/mp2696_charger.ko;
 cd /;
 /root/mk100/mk100t/start.sh
