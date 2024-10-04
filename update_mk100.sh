@@ -18,6 +18,6 @@ cp /root/mk100/MK100/sys/criticaltemperature.png /usr/share/images/desktop-base/
 cp /root/mk100/MK100/sys/hightemperature.png /usr/share/images/desktop-base/hightemperature.png;
 cp /root/mk100/MK100/sys/poweroff.png /usr/share/images/desktop-base/poweroff.png;
 cp /root/mk100/MK100/sys/powercontrol.sh /root/mk100/mk100t/powercontrol.sh; chmod +x /root/mk100/mk100t/powercontrol.sh;
-systemctl restart powercontrol
+systemctl restart powercontrol;
 cd /;
 /root/mk100/mk100t/start.sh
