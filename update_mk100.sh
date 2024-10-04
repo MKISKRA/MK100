@@ -13,6 +13,11 @@ cp /root/mk100/MK100/sys/libinput.rules /lib/udev/rules.d/libinput.rules;
 cp /root/mk100/MK100/sys/gbutton /root/mk100/mk100t/gbutton;
 cp /root/mk100/MK100/sys/sleep_screen.sh /root/mk100/mk100t/sleep_screen.sh;
 cp /root/mk100/MK100/sys/mp2696_charger.ko /root/mp2696_charger.ko;
+cp /root/mk100/MK100/sys/criticalpower.png /usr/share/images/desktop-base/criticalpower.png;
+cp /root/mk100/MK100/sys/criticaltemperature.png /usr/share/images/desktop-base/criticaltemperature.png;
+cp /root/mk100/MK100/sys/hightemperature.png /usr/share/images/desktop-base/hightemperature.png;
+cp /root/mk100/MK100/sys/poweroff.png /usr/share/images/desktop-base/poweroff.png;
 cp /root/mk100/MK100/sys/powercontrol.sh /root/mk100/mk100t/powercontrol.sh; chmod +x /root/mk100/mk100t/powercontrol.sh;
+systemctl restart powercontrol
 cd /;
 /root/mk100/mk100t/start.sh
