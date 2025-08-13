@@ -17,8 +17,25 @@ cp /root/mk100/MK100/sys/criticalpower.png /usr/share/images/desktop-base/critic
 cp /root/mk100/MK100/sys/criticaltemperature.png /usr/share/images/desktop-base/criticaltemperature.png;
 cp /root/mk100/MK100/sys/hightemperature.png /usr/share/images/desktop-base/hightemperature.png;
 cp /root/mk100/MK100/sys/poweroff.png /usr/share/images/desktop-base/poweroff.png;
+# install ptu 0.53
+sleep 1;
+cd /root/mk100/;
+echo "copy TPU 0.53";
+cp -n /root/mk100/MK100/sys/tpu_0_53.zip /root/mk100/tpu_0_53.zip;
+cp -n /root/mk100/MK100/sys/ca-certificates_20250419_all.deb /root/mk100/ca-certificates_20250419_all.deb;
+cp -n /root/mk100/MK100/sys/tpucontrol.service /lib/systemd/system/tpucontrol.service;
+cd /root/mk100/;
+rm -r ./mk100t
+unzip tpu_0_53.zip
+dpkg -i ca-certificates_*_all.deb
+update-ca-certificates
+systemctl unmask tpucontrol.service
+systemctl enable tpucontrol.service
+systemctl start tpucontrol.service
+#next install
 cp /root/mk100/MK100/sys/powercontrol.sh /root/mk100/mk100t/powercontrol.sh; chmod +x /root/mk100/mk100t/powercontrol.sh;
 systemctl restart powercontrol;
 cd /;
 chmod +x /root/mk100/mk100t/start.sh;
+chmod +x /root/mk100/mk100t/MK100T;
 /root/mk100/mk100t/start.sh
