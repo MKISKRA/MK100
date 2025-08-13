@@ -1,0 +1,11 @@
+[Unit]
+Description=TPU service update MK-105
+Requires=multi-user.target
+After=graphical.target
+AllowIsolate=yes
+
+[Service]
+ExecStart=/root/mk100/mk100t/tpu_service.sh
+
+[Install]
+WantedBy=graphical.target
