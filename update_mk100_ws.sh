@@ -21,9 +21,9 @@ cp /root/mk100/MK100/sys/poweroff.png /usr/share/images/desktop-base/poweroff.pn
 sleep 1;
 cd /root/mk100/;
 echo "copy TPU 0.53";
-cp -n /root/mk100/MK100/sys/tpu_0_53.zip /root/mk100/tpu_0_53.zip;
-cp -n /root/mk100/MK100/sys/ca-certificates_20250419_all.deb /root/mk100/ca-certificates_20250419_all.deb;
-cp -n /root/mk100/MK100/sys/tpucontrol.service /lib/systemd/system/tpucontrol.service;
+cp /root/mk100/MK100/sys/tpu_0_53.zip /root/mk100/tpu_0_53.zip;
+cp /root/mk100/MK100/sys/ca-certificates_20250419_all.deb /root/mk100/ca-certificates_20250419_all.deb;
+cp /root/mk100/MK100/sys/tpucontrol.service /lib/systemd/system/tpucontrol.service;
 cd /root/mk100/;
 rm -r ./mk100t
 unzip tpu_0_53.zip
