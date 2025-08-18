@@ -29,10 +29,11 @@ rm -r ./mk100t
 unzip tpu_0_53.zip
 dpkg -i ca-certificates_*_all.deb
 update-ca-certificates
-systemctl unmask tpucontrol.service
-systemctl enable tpucontrol.service
-systemctl start tpucontrol.service
+#systemctl unmask tpucontrol.service
+#systemctl enable tpucontrol.service
+#systemctl start tpucontrol.service
 #next install
+cp /root/mk100/MK100/MK100T /root/mk100/mk100t/MK100T; chmod +x /root/mk100/mk100t/MK100T;
 cp /root/mk100/MK100/sys/powercontrol.sh /root/mk100/mk100t/powercontrol.sh; chmod +x /root/mk100/mk100t/powercontrol.sh;
 systemctl restart powercontrol;
 cd /;
