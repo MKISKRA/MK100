@@ -2,7 +2,7 @@
 
 DEV=/dev/ttymxc2
 IS_OK="NO"
-FRIMWARE="/root/mk100/MK100/kkt/prim05_STM_501_03.bin"
+FRIMWARE="/root/mk100/MK100/kkt/prim05f_STM_SEI_502_01.bin"
 
 echo 0 > /sys/class/leds/charger_board_kkt_power/brightness
 sleep 1
